@@ -44,6 +44,22 @@
     /* left:15px; */
     top:-5px;
 }
+.isLike{fill:#eb6c57;}
+.marquee{
+  width:300px;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.marquee span{
+  display: inline-block;
+  padding-left: 100%;
+  animation:marquee 20s linear infinite;
+}
+@keyframes marquee {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-100%);}
+}
 </style>
 </head>
 
@@ -51,13 +67,14 @@
 
   <!-- Top Bar -->
   <div class="flex items-center justify-between text-white mb-6">
+    <a href="playlist.html">
     <button>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
       </svg>
     </button>
-
+</a>
     <button>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor"
         viewBox="0 0 24 24">
@@ -78,27 +95,28 @@
   <!-- Title -->
    <div class="flex justify-between">
   <div class="mt-4 text-left">
-    <h1 class="text-lg font-semibold text-white">
-      KS Bloom_Joyeux_-_annivers
+    <h1 class="text-2xl font-semibold text-white marquee">
+      <span id="nom_clip">KS Bloom_Joyeux_-_annivers qui doit défiller automatiquement</span>
     </h1>
     <p class="text-sm text-gray-300">Unknown</p>
   </div>
 
   <!-- Actions -->
-  <div class="flex justify-center gap-3 mt-3 text-white">
+  <div class="flex justify-center items-center gap-3 mt-3 text-white">
     <!-- Download -->
-    <button>
+  <a download="KS_BLOOM_-__satan_dehors___CLIP_OFFICIEL__(135).mp3" href="hit/KS_BLOOM_-__satan_dehors___CLIP_OFFICIEL__(135).mp3" target="_blank" id="link_clip">
+     <button>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
       </svg>
     </button>
-
+</a> 
     <!-- Like -->
-    <button>
+    <button class="like">
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24">
+        viewBox="0 0 24 24" onclick="this.classList.toggle('isLike')">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M4.318 6.318a4.5 4.5 0 016.364 0L12 7.636l1.318-1.318a4.5 4.5 0 116.364 6.364L12 21l-7.682-7.682a4.5 4.5 0 010-6.364z" />
       </svg>
@@ -128,7 +146,7 @@
     <!-- Previous -->
     <button class="bg-white/20 p-2 xs:p-3 rounded-full text-white border border-white/20">
      
-       <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" class="h-8 w-8" viewBox="0 -960 960 960"  fill="#f1f1f1"><path d="M220-240v-480h80v480h-80Zm520 0L380-480l360-240v480Zm-80-240Zm0 90v-180l-136 90 136 90Z"/></svg>
+       <svg id="previous" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" class="h-8 w-8" viewBox="0 -960 960 960"  fill="#f1f1f1"><path d="M220-240v-480h80v480h-80Zm520 0L380-480l360-240v480Zm-80-240Zm0 90v-180l-136 90 136 90Z"/></svg>
     </button>
 
     <!-- Play -->
@@ -144,7 +162,7 @@
     <button class="bg-white/20 p-2 xs:p-3 rounded-full text-white border border-white/20" >
      
 
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="#f1f1f1" stroke="currentColor" stroke-width="2"  viewBox="0 -960 960 960" >
+      <svg id="next" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="#f1f1f1" stroke="currentColor" stroke-width="2"  viewBox="0 -960 960 960" >
         <path d="M660-240v-480h80v480h-80Zm-440 0v-480l360 240-360 240Zm80-240Zm0 90 136-90-136-90v180Z"/></svg>
     </button>
 
