@@ -212,9 +212,6 @@
   .-mt-1 {
     margin-top: calc(var(--spacing) * -1);
   }
-  .-mt-10 {
-    margin-top: calc(var(--spacing) * -10);
-  }
   .mt-1 {
     margin-top: calc(var(--spacing) * 1);
   }
@@ -242,8 +239,8 @@
   .mb-1 {
     margin-bottom: calc(var(--spacing) * 1);
   }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
@@ -401,9 +398,6 @@
       background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
     }
   }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
   .bg-slate-400 {
     background-color: var(--color-slate-400);
   }
@@ -541,12 +535,6 @@
   }
   .text-gray-300 {
     color: var(--color-gray-300);
-  }
-  .text-slate-400 {
-    color: var(--color-slate-400);
-  }
-  .text-slate-700 {
-    color: var(--color-slate-700);
   }
   .text-white {
     color: var(--color-white);
