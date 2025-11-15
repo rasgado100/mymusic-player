@@ -33,14 +33,15 @@
   </div>
 
   <!-- Album Cover -->
-  <div class="bg-black/20 rounded-3xl overflow-hidden mx-auto w-full max-w-md">
+  <div class="bg-black/20 rounded-3xl overflow-hidden mx-auto w-full max-w-md bg-cover">
     <img src="assets/ks_album.jpeg"
       alt="Album Cover"
       class="w-full h-64 object-cover" />
   </div>
 
   <!-- Title -->
-  <div class="mt-4 text-center">
+   <div class="flex justify-between">
+  <div class="mt-4 text-left">
     <h1 class="text-lg font-semibold text-white">
       KS Bloom_Joyeux_-_annivers
     </h1>
@@ -48,7 +49,7 @@
   </div>
 
   <!-- Actions -->
-  <div class="flex justify-center gap-6 mt-3 text-white">
+  <div class="flex justify-center gap-3 mt-3 text-white">
     <!-- Download -->
     <button>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
@@ -67,9 +68,9 @@
       </svg>
     </button>
   </div>
-
+</div>
   <!-- Progress Bar -->
-  <div class="mt-6 px-6">
+  <div class="mt-24 px-1">
     <input type="range" class="w-full accent-white" value="72" />
     <div class="flex justify-between text-xs text-white mt-1">
       <span>03:01</span>
@@ -78,31 +79,52 @@
   </div>
 
   <!-- Controls -->
-  <div class="flex justify-center items-center gap-10 mt-6">
+  <div class="flex justify-between items-center  gap-4 mt-6">
+     <button class=" rounded-full text-white">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 -960 960 960" class="h-6 w-6 " style="transform: rotate(314deg);" stroke="currentColor" stroke-width="2"  fill="#f1f1f1"><path d="M487-104 150-440h114l280 280 200-200H640v-80h240v240h-80v-104L600-104q-23 23-56.5 23T487-104ZM80-520v-240h80v104l200-200q23-23 56.5-23t56.5 23l337 336H696L416-800 216-600h104v80H80Z"/></svg>
+
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" viewBox="0 -960 960 960"  class="h-6 w-6" fill="#f1f1f1"><path d="M240-160 80-320l56-56 64 62v-332l-64 62-56-56 160-160 160 160-56 56-64-62v332l64-62 56 56-160 160Zm240-40v-80h400v80H480Zm0-240v-80h400v80H480Zm0-240v-80h400v80H480Z"/></svg> -->
+ </button>
     <!-- Previous -->
-    <button class="bg-white/20 p-4 rounded-full text-white">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+    <button class="bg-white/20 p-3 rounded-full text-white border border-white/20">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M10 19l-7-7 7-7M21 19l-7-7 7-7" />
-      </svg>
+      </svg> -->
+       <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" class="h-8 w-8" viewBox="0 -960 960 960"  fill="#f1f1f1"><path d="M220-240v-480h80v480h-80Zm520 0L380-480l360-240v480Zm-80-240Zm0 90v-180l-136 90 136 90Z"/></svg>
     </button>
 
     <!-- Play -->
-    <button class="bg-blue-600 p-6 rounded-full text-white shadow-lg shadow-blue-900/40">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor"
+    <button class="bg-white/20 p-4 rounded-full text-white shadow-lg shadow-blue-900/20 border border-white/20">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="currentColor"
         viewBox="0 0 24 24">
         <path d="M8 5v14l11-7z" />
       </svg>
+     
     </button>
 
     <!-- Next -->
-    <button class="bg-white/20 p-4 rounded-full text-white">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+    <button class="bg-white/20 p-3 rounded-full text-white border border-white/20">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round"
           d="M14 5l7 7-7 7M3 5l7 7-7 7" />
-      </svg>
+      </svg> -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="#f1f1f1" stroke="currentColor" stroke-width="2"  viewBox="0 -960 960 960" >
+        <path d="M660-240v-480h80v480h-80Zm-440 0v-480l360 240-360 240Zm80-240Zm0 90 136-90-136-90v180Z"/></svg>
+
+    </button>
+    <button class="rounded-full text-white">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M14 5l7 7-7 7M3 5l7 7-7 7" />
+      </svg> -->
+
+     
+<svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2" viewBox="0 -960 960 960"  class="h-6 w-6" fill="#f1f1f1"><path d="M240-160 80-320l56-56 64 62v-332l-64 62-56-56 160-160 160 160-56 56-64-62v332l64-62 56 56-160 160Zm240-40v-80h400v80H480Zm0-240v-80h400v80H480Zm0-240v-80h400v80H480Z"/></svg>
     </button>
   </div>
 
