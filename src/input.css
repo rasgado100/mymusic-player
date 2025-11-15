@@ -1,9 +1,11 @@
 @import "tailwindcss" ;
 
 @theme {
+    --breakpoint-xs:335px;
     --breakpoint-sm:480px;
     --breakpoint-md:768px;
     --breakpoint-lg:976px;
     --color-twiter-blue:#1da1f2;
-    --font-grifter : "Grifter"
+    --font-grifter : "Grifter";
+
 }
